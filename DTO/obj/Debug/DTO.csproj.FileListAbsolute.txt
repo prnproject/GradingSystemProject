@@ -1,0 +1,2 @@
+E:\NET Project\GradingSystemProject\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+E:\NET Project\GradingSystemProject\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
