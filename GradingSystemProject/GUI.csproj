@@ -47,11 +47,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="TeacherViewForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="TeacherViewForm.Designer.cs">
+      <DependentUpon>TeacherViewForm.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
@@ -67,8 +67,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="TeacherViewForm.resx">
+      <DependentUpon>TeacherViewForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StudentViewForm.resx">
       <DependentUpon>StudentViewForm.cs</DependentUpon>
@@ -96,9 +96,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BAL\DAL.csproj">
-      <Project>{60ed2832-0f75-4241-9b80-a1724b56c1de}</Project>
-      <Name>DAL</Name>
+    <ProjectReference Include="..\DLL\BLL.csproj">
+      <Project>{128280e8-4faa-4868-9e62-4b30a0756b8c}</Project>
+      <Name>BLL</Name>
     </ProjectReference>
     <ProjectReference Include="..\DTO\DTO.csproj">
       <Project>{7d859620-2a87-4f87-93c0-9f2f2af40340}</Project>

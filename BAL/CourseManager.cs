@@ -7,11 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BAL
+namespace DAL
 {
-    public class SubjectManager: Connect
+    public class CourseManager: Connect
     {
-        public List<Subject> subject()
+        public static List<Course> GetCourses()
         {
             if (conn.State == ConnectionState.Closed)
             {
@@ -19,11 +19,11 @@ namespace BAL
             }
 
             SqlCommand command = new SqlCommand($"select * from [Course] ", conn);
-            List<Subject> subject = new List<Subject>();
+            List<Course> subject = new List<Course>();
             SqlDataReader reader = command.ExecuteReader();
             while (reader.Read())
             {
-                subject.Add(new Subject(reader.GetInt32(0),reader.GetString(1)));
+                subject.Add(new Course(reader.GetInt32(0),reader.GetString(1)));
 
             }
             conn.Close();

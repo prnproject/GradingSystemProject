@@ -6,3 +6,7 @@ C:\Users\PHU\Downloads\GradingSystemProject-master\GradingSystemProject-master\D
 C:\Users\PHU\Downloads\GradingSystemProject-master\GradingSystemProject-master\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 C:\Users\PHU\Downloads\GradingSystemProject-master\GradingSystemProject-master\DTO\obj\Debug\DTO.dll
 C:\Users\PHU\Downloads\GradingSystemProject-master\GradingSystemProject-master\DTO\obj\Debug\DTO.pdb
+E:\NET Project\GradingSystemProject\DTO\bin\Debug\DTO.dll
+E:\NET Project\GradingSystemProject\DTO\bin\Debug\DTO.pdb
+E:\NET Project\GradingSystemProject\DTO\obj\Debug\DTO.dll
+E:\NET Project\GradingSystemProject\DTO\obj\Debug\DTO.pdb

@@ -14,3 +14,21 @@ C:\Users\PHU\Downloads\GradingSystemProject-master\GradingSystemProject-master\G
 C:\Users\PHU\Downloads\GradingSystemProject-master\GradingSystemProject-master\GradingSystemProject\obj\Debug\GUI.csproj.CopyComplete
 C:\Users\PHU\Downloads\GradingSystemProject-master\GradingSystemProject-master\GradingSystemProject\obj\Debug\GradingSystemProject.exe
 C:\Users\PHU\Downloads\GradingSystemProject-master\GradingSystemProject-master\GradingSystemProject\obj\Debug\GradingSystemProject.pdb
+E:\NET Project\GradingSystemProject\GradingSystemProject\obj\Debug\GUI.csproj.AssemblyReference.cache
+E:\NET Project\GradingSystemProject\GradingSystemProject\obj\Debug\GradingSystemProject.btnLogout.resources
+E:\NET Project\GradingSystemProject\GradingSystemProject\obj\Debug\GradingSystemProject.Properties.Resources.resources
+E:\NET Project\GradingSystemProject\GradingSystemProject\obj\Debug\GUI.csproj.GenerateResource.cache
+E:\NET Project\GradingSystemProject\GradingSystemProject\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+E:\NET Project\GradingSystemProject\GradingSystemProject\obj\Debug\GradingSystemProject.exe
+E:\NET Project\GradingSystemProject\GradingSystemProject\obj\Debug\GradingSystemProject.pdb
+E:\NET Project\GradingSystemProject\GradingSystemProject\bin\Debug\GradingSystemProject.exe.config
+E:\NET Project\GradingSystemProject\GradingSystemProject\bin\Debug\GradingSystemProject.exe
+E:\NET Project\GradingSystemProject\GradingSystemProject\bin\Debug\GradingSystemProject.pdb
+E:\NET Project\GradingSystemProject\GradingSystemProject\bin\Debug\BAL.dll
+E:\NET Project\GradingSystemProject\GradingSystemProject\bin\Debug\DTO.dll
+E:\NET Project\GradingSystemProject\GradingSystemProject\bin\Debug\BAL.pdb
+E:\NET Project\GradingSystemProject\GradingSystemProject\bin\Debug\DTO.pdb
+E:\NET Project\GradingSystemProject\GradingSystemProject\obj\Debug\GUI.csproj.CopyComplete
+E:\NET Project\GradingSystemProject\GradingSystemProject\obj\Debug\GradingSystemProject.TeacherViewForm.resources
+E:\NET Project\GradingSystemProject\GradingSystemProject\bin\Debug\DLL.dll
+E:\NET Project\GradingSystemProject\GradingSystemProject\bin\Debug\DLL.pdb

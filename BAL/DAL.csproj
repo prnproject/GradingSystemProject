@@ -41,17 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="StudentManager.cs" />
     <Compile Include="GradeManager.cs" />
-    <Compile Include="SubjectManager.cs" />
+    <Compile Include="CourseManager.cs" />
     <Compile Include="TeachingManager.cs" />
     <Compile Include="Connect.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DLL\BLL.csproj">
-      <Project>{128280e8-4faa-4868-9e62-4b30a0756b8c}</Project>
-      <Name>BLL</Name>
-    </ProjectReference>
     <ProjectReference Include="..\DTO\DTO.csproj">
       <Project>{7d859620-2a87-4f87-93c0-9f2f2af40340}</Project>
       <Name>DTO</Name>

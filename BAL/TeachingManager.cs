@@ -7,26 +7,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BAL
+namespace DAL
 {
     public class TeachingManager : Connect
     {
-        public List<String> getClass(String courseID)
+        public static List<Class> GetClassesByCourseID(int TeacherID, int courseID)
         {
             if (conn.State == ConnectionState.Closed)
             {
                 conn.Open();
             }
 
-            SqlCommand command = new SqlCommand($"select * from Teaching where TeachingTeacherID = 1 and TeachingCourseID = {courseID}", conn);
-             
+            SqlCommand command = new SqlCommand($"select ClassID, ClassName\n" +
+                                                "from\n" +
+                                                "Class inner join\n" +
+                                                $"(select TeachingClassID from Teaching where TeachingTeacherID = {TeacherID} and TeachingCourseID = {courseID}) Teaching\n" +
+                                                "on ClassID = TeachingClassID", conn);
             SqlDataReader reader = command.ExecuteReader();
-            List<String> classID = new List<String>();
+            List<Class> classes  = new List<Class>();
             while (reader.Read()) {
-                classID.Add(reader.GetInt32(3).ToString());
+                classes.Add(new Class(reader.GetInt32(0), reader.GetString(1)));
             }
             conn.Close();
-            return classID;
+            return classes;
         }
     }
 }

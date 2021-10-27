@@ -9,7 +9,7 @@ namespace DTO
     public class Grade
     {
         int gradeStudentID;
-        int gradeSubjectID;
+        int gradeCourseID;
         int attendenceGrade;
         int projectGrade;
         int writtenGrade;
@@ -17,10 +17,10 @@ namespace DTO
         int finalExamGrade;
         int finalAvarageGrade;
 
-        public Grade(int gradeStudentID, int gradeSubjectID, int attendenceGrade, int projectGrade, int writtenGrade, int practicalExamGrade, int finalExamGrade, int finalAvarageGrade)
+        public Grade(int gradeStudentID, int gradeCourseID, int attendenceGrade, int projectGrade, int writtenGrade, int practicalExamGrade, int finalExamGrade, int finalAvarageGrade)
         {
             this.GradeStudentID = gradeStudentID;
-            this.GradeSubjectID = gradeSubjectID;
+            this.GradeCourseID = gradeCourseID;
             this.AttendenceGrade = attendenceGrade;
             this.ProjectGrade = projectGrade;
             this.WrittenGrade = writtenGrade;
@@ -30,7 +30,7 @@ namespace DTO
         }
 
         public int GradeStudentID { get => gradeStudentID; set => gradeStudentID = value; }
-        public int GradeSubjectID { get => gradeSubjectID; set => gradeSubjectID = value; }
+        public int GradeCourseID { get => gradeCourseID; set => gradeCourseID = value; }
         public int AttendenceGrade { get => attendenceGrade; set => attendenceGrade = value; }
         public int ProjectGrade { get => projectGrade; set => projectGrade = value; }
         public int WrittenGrade { get => writtenGrade; set => writtenGrade = value; }
@@ -39,3 +39,4 @@ namespace DTO
         public int FinalAvarageGrade { get => finalAvarageGrade; set => finalAvarageGrade = value; }
     }
 }
+

@@ -6,11 +6,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BAL
+namespace DAL
 {
     public class GradeManager : Connect
     {
-        public bool SaveGrade(int gradeStudentID, int gradeSubjectID, int attendenceGrade, int projectGrade, int writtenGrade, int practicalExamGrade, int finalExamGrade, int finalAverageGrade)
+        public static String InsertGrade(int gradeStudentID, int gradeCourse, int attendenceGrade, int projectGrade, int writtenGrade, int practicalExamGrade, int finalExamGrade, int finalAverageGrade)
         {
             try
             {
@@ -19,20 +19,20 @@ namespace BAL
                     conn.Open();
                 }
 
-                SqlCommand command = new SqlCommand($"insert into [Grade] values('{gradeStudentID}','{gradeSubjectID}','{attendenceGrade}','{projectGrade}','{writtenGrade},'{practicalExamGrade}','{finalExamGrade}','{finalAverageGrade}'", conn);
+                SqlCommand command = new SqlCommand($"insert into [Grade] values('{gradeStudentID}','{gradeCourse}','{attendenceGrade}','{projectGrade}','{writtenGrade}','{practicalExamGrade}','{finalExamGrade}','{finalAverageGrade}')", conn);
 
                 if (command.ExecuteNonQuery() > 0)
                 {
                     conn.Close();
-                    return true;
+                    return "Insert Success!";
                 }
             }
-            catch
+            catch (Exception ex)
             {
-
+                return ex.Message + "\nInsert Failed!";
             }
             conn.Close();
-            return false;
+            return "Insert Success!";
         }
     }
 }

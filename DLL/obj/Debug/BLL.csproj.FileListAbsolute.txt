@@ -7,3 +7,14 @@ C:\Users\PHU\Downloads\GradingSystemProject-master\GradingSystemProject-master\D
 C:\Users\PHU\Downloads\GradingSystemProject-master\GradingSystemProject-master\DLL\obj\Debug\BLL.csproj.CopyComplete
 C:\Users\PHU\Downloads\GradingSystemProject-master\GradingSystemProject-master\DLL\obj\Debug\DLL.dll
 C:\Users\PHU\Downloads\GradingSystemProject-master\GradingSystemProject-master\DLL\obj\Debug\DLL.pdb
+E:\NET Project\GradingSystemProject\DLL\bin\Debug\DLL.dll
+E:\NET Project\GradingSystemProject\DLL\bin\Debug\DLL.pdb
+E:\NET Project\GradingSystemProject\DLL\bin\Debug\DTO.dll
+E:\NET Project\GradingSystemProject\DLL\bin\Debug\DTO.pdb
+E:\NET Project\GradingSystemProject\DLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+E:\NET Project\GradingSystemProject\DLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+E:\NET Project\GradingSystemProject\DLL\obj\Debug\BLL.csproj.CopyComplete
+E:\NET Project\GradingSystemProject\DLL\obj\Debug\DLL.dll
+E:\NET Project\GradingSystemProject\DLL\obj\Debug\DLL.pdb
+E:\NET Project\GradingSystemProject\DLL\bin\Debug\BAL.dll
+E:\NET Project\GradingSystemProject\DLL\bin\Debug\BAL.pdb

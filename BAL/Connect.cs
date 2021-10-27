@@ -5,10 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BAL
+namespace DAL
 {
     public class Connect
     {
-        protected SqlConnection conn = new SqlConnection("Data Source=LAPTOP-19CIVOIT;Initial Catalog=GradingSystem;Integrated Security=True");
+        protected static SqlConnection conn = new SqlConnection("Data Source=.\\SQLEXPRESS;Initial Catalog=GradingSystem;User ID=sa;Password=admin;");
     }
 }
