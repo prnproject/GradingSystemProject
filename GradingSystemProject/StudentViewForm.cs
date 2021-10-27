@@ -27,5 +27,10 @@ namespace GradingSystemProject
         {
 
         }
+
+        private void cboSubject_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

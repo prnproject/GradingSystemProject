@@ -31,5 +31,10 @@ namespace DTO
         public string StudentName { get => studentName; set => studentName = value; }
         public string StudentPhoneNumber { get => studentPhoneNumber; set => studentPhoneNumber = value; }
         public string StudentMail { get => studentMail; set => studentMail = value; }
+
+        public override string ToString()
+        {
+            return StudentName;
+        }
     }
 }

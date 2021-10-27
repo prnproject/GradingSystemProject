@@ -76,6 +76,7 @@ namespace GradingSystemProject
             this.cboSubject.Name = "cboSubject";
             this.cboSubject.Size = new System.Drawing.Size(273, 24);
             this.cboSubject.TabIndex = 2;
+            this.cboSubject.SelectedIndexChanged += new System.EventHandler(this.cboSubject_SelectedIndexChanged);
             // 
             // label3
             // 

@@ -1,0 +1,11 @@
+C:\Users\PHU\Downloads\GradingSystemProject-master\GradingSystemProject-master\BAL\bin\Debug\BAL.dll
+C:\Users\PHU\Downloads\GradingSystemProject-master\GradingSystemProject-master\BAL\bin\Debug\BAL.pdb
+C:\Users\PHU\Downloads\GradingSystemProject-master\GradingSystemProject-master\BAL\bin\Debug\DLL.dll
+C:\Users\PHU\Downloads\GradingSystemProject-master\GradingSystemProject-master\BAL\bin\Debug\DTO.dll
+C:\Users\PHU\Downloads\GradingSystemProject-master\GradingSystemProject-master\BAL\bin\Debug\DLL.pdb
+C:\Users\PHU\Downloads\GradingSystemProject-master\GradingSystemProject-master\BAL\bin\Debug\DTO.pdb
+C:\Users\PHU\Downloads\GradingSystemProject-master\GradingSystemProject-master\BAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\PHU\Downloads\GradingSystemProject-master\GradingSystemProject-master\BAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\PHU\Downloads\GradingSystemProject-master\GradingSystemProject-master\BAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\PHU\Downloads\GradingSystemProject-master\GradingSystemProject-master\BAL\obj\Debug\BAL.dll
+C:\Users\PHU\Downloads\GradingSystemProject-master\GradingSystemProject-master\BAL\obj\Debug\BAL.pdb
