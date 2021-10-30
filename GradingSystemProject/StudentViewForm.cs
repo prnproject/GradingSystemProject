@@ -28,7 +28,7 @@ namespace GradingSystemProject
         DataSet dataSet;
         private void Form2_Load(object sender, EventArgs e)
         {
-            adapter = new SqlDataAdapter("Select * From Grade",conn);
+            adapter = new SqlDataAdapter("Select * From Grade;select CourseName from Course",conn);
             dataSet = new DataSet();
             adapter.Fill(dataSet);
         }
@@ -41,16 +41,14 @@ namespace GradingSystemProject
         public string UserID;
         public string ClassID;
 
-        private void displayusername_Load(object sender, EventArgs e)
+        private void txt_Load(object sender, EventArgs e)
         {
-            txtStudent.Text = UserID;
-            txtClass.Text = ClassID;
+            MessageBox.Show("Hello, " + Student.studentName);
+            txtStudent.Text = "Hello, " + Student.studentName;
+            MessageBox.Show("Class: " + Student.studentClassId);
+            txtClass.Text = "Class: " + Student.studentClassID;
         }
-        btnLogout (String uid)
-        {
-            Init()
-            this.UserID = uid;
-        }
+
 
 
         private void label2_Click(object sender, EventArgs e)
@@ -60,7 +58,7 @@ namespace GradingSystemProject
 
         private void cboSubject_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            cboSubject.DataSource = dataSet.Tables[1];
         }
     }
 }
