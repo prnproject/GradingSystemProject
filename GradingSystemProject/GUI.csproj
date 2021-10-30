@@ -68,6 +68,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TeacherViewForm.resx">
       <DependentUpon>TeacherViewForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -98,7 +101,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DLL\BLL.csproj">
+    <ProjectReference Include="..\BLL\BLL.csproj">
       <Project>{128280e8-4faa-4868-9e62-4b30a0756b8c}</Project>
       <Name>BLL</Name>
     </ProjectReference>

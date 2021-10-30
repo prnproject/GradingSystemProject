@@ -12,7 +12,7 @@ namespace DAL
     public class CourseManager: Connect
     {
         public static List<Course> GetCourses()
-        {
+        {            
             if (conn.State == ConnectionState.Closed)
             {
                 conn.Open();

@@ -20,12 +20,16 @@ namespace GradingSystemProject
             InitializeComponent();
 
         }
+
+		int teacherID;
+
 		TeacherFormBLL teacherbll = new TeacherFormBLL();
-		int tempTeacherID = 1; //id cứng tạm thời cho teacher vì chưa có login để lấy id
 		int selectedStudentID = -1;
 		TextBox[] gradeTextBoxes;
 
-		private void Form1_Load(object sender, EventArgs e)
+        public int TeacherID { get => teacherID; set => teacherID = value; }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 			List<Course> courses = teacherbll.GetCourses();
             foreach (Course c in courses)
@@ -74,7 +78,7 @@ namespace GradingSystemProject
 			selectedStudentID = -1;
 			ResetTextBox();
 			LockScoreTextBox();			
-			List <Class> classes = teacherbll.GetClassesByCourse(tempTeacherID, (Course)cboCourse.SelectedItem);
+			List <Class> classes = teacherbll.GetClassesByCourse(teacherID, (Course)cboCourse.SelectedItem);
 			cboClass.Text = "";
 			cboClass.Items.Clear();
 			cboClass.Items.AddRange(classes.ToArray());

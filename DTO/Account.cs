@@ -13,6 +13,12 @@ namespace DTO
         string accountPassword;
         string accountRole;
 
+        public Account(string accountUserName, string accountPassword)
+        {
+            AccountUserName = accountUserName;
+            AccountPassword = accountPassword;
+        }
+
         public Account(int accountID, string accountUserName, string accountPassword, string accountRole)
         {
             AccountID = accountID;

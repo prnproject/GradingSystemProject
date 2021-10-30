@@ -36,3 +36,12 @@ E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\BAL\obj\Debug\
 E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\BAL\obj\Debug\DAL.csproj.CopyComplete
 E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\BAL\obj\Debug\BAL.dll
 E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\BAL\obj\Debug\BAL.pdb
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\DAL\bin\Debug\DTO.dll
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\DAL\bin\Debug\DTO.pdb
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\DAL\obj\Debug\DAL.csproj.CopyComplete
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\DAL\bin\Debug\DAL.dll
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\DAL\bin\Debug\DAL.pdb
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\DAL\obj\Debug\DAL.dll
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\DAL\obj\Debug\DAL.pdb

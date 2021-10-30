@@ -1,7 +1,7 @@
 ﻿
 namespace GradingSystemProject
 {
-    partial class btnLogout
+    partial class StudentViewForm
     {
         /// <summary>
         /// Required designer variable.
@@ -105,7 +105,7 @@ namespace GradingSystemProject
             this.button2.Text = "Logout";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // btnLogout
+            // StudentViewForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -117,7 +117,7 @@ namespace GradingSystemProject
             this.Controls.Add(this.dgvGrade);
             this.Controls.Add(this.txtClass);
             this.Controls.Add(this.txtStudent);
-            this.Name = "btnLogout";
+            this.Name = "StudentViewForm";
             this.Text = "<StudentName> | Grading System";
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvGrade)).EndInit();

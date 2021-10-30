@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace GradingSystemProject
 {
-    public partial class btnLogout : Form
+    public partial class StudentViewForm : Form
     {
-        public btnLogout()
+        public StudentViewForm()
         {
             InitializeComponent();
         }
