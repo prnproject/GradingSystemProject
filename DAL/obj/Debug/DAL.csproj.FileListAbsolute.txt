@@ -1,0 +1,47 @@
+C:\Users\PHU\Downloads\GradingSystemProject-master\GradingSystemProject-master\BAL\bin\Debug\BAL.dll
+C:\Users\PHU\Downloads\GradingSystemProject-master\GradingSystemProject-master\BAL\bin\Debug\BAL.pdb
+C:\Users\PHU\Downloads\GradingSystemProject-master\GradingSystemProject-master\BAL\bin\Debug\DLL.dll
+C:\Users\PHU\Downloads\GradingSystemProject-master\GradingSystemProject-master\BAL\bin\Debug\DTO.dll
+C:\Users\PHU\Downloads\GradingSystemProject-master\GradingSystemProject-master\BAL\bin\Debug\DLL.pdb
+C:\Users\PHU\Downloads\GradingSystemProject-master\GradingSystemProject-master\BAL\bin\Debug\DTO.pdb
+C:\Users\PHU\Downloads\GradingSystemProject-master\GradingSystemProject-master\BAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\PHU\Downloads\GradingSystemProject-master\GradingSystemProject-master\BAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\PHU\Downloads\GradingSystemProject-master\GradingSystemProject-master\BAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\PHU\Downloads\GradingSystemProject-master\GradingSystemProject-master\BAL\obj\Debug\BAL.dll
+C:\Users\PHU\Downloads\GradingSystemProject-master\GradingSystemProject-master\BAL\obj\Debug\BAL.pdb
+E:\NET Project\GradingSystemProject\BAL\bin\Debug\BAL.dll
+E:\NET Project\GradingSystemProject\BAL\bin\Debug\BAL.pdb
+E:\NET Project\GradingSystemProject\BAL\bin\Debug\DTO.dll
+E:\NET Project\GradingSystemProject\BAL\bin\Debug\DTO.pdb
+E:\NET Project\GradingSystemProject\BAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+E:\NET Project\GradingSystemProject\BAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\NET Project\GradingSystemProject\BAL\obj\Debug\DAL.csproj.CopyComplete
+E:\NET Project\GradingSystemProject\BAL\obj\Debug\BAL.dll
+E:\NET Project\GradingSystemProject\BAL\obj\Debug\BAL.pdb
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\BAL\bin\Debug\BAL.dll
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\BAL\bin\Debug\BAL.pdb
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\BAL\bin\Debug\DTO.dll
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\BAL\bin\Debug\DTO.pdb
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\BAL\obj\Debug\DAL.csprojAssemblyReference.cache
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\BAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\BAL\obj\Debug\DAL.csproj.CopyComplete
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\BAL\obj\Debug\BAL.dll
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\BAL\obj\Debug\BAL.pdb
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\BAL\bin\Debug\BAL.dll
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\BAL\bin\Debug\BAL.pdb
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\BAL\bin\Debug\DTO.dll
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\BAL\bin\Debug\DTO.pdb
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\BAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\BAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\BAL\obj\Debug\DAL.csproj.CopyComplete
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\BAL\obj\Debug\BAL.dll
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\BAL\obj\Debug\BAL.pdb
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\DAL\bin\Debug\DTO.dll
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\DAL\bin\Debug\DTO.pdb
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\DAL\obj\Debug\DAL.csproj.CopyComplete
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\DAL\bin\Debug\DAL.dll
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\DAL\bin\Debug\DAL.pdb
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\DAL\obj\Debug\DAL.dll
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\DAL\obj\Debug\DAL.pdb

@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 namespace GradingSystemProject
 {
     partial class TeacherViewForm
@@ -65,7 +67,6 @@ namespace GradingSystemProject
             this.btnSave = new System.Windows.Forms.Button();
             this.btnClearAll = new System.Windows.Forms.Button();
             this.bntCompute = new System.Windows.Forms.Button();
-            this.btnUpdate = new System.Windows.Forms.Button();
             this.cboClass = new System.Windows.Forms.ComboBox();
             this.cboCourse = new System.Windows.Forms.ComboBox();
             this.lstStudent = new System.Windows.Forms.ListView();
@@ -103,6 +104,7 @@ namespace GradingSystemProject
             this.txtName.ReadOnly = true;
             this.txtName.Size = new System.Drawing.Size(191, 22);
             this.txtName.TabIndex = 99;
+            this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
             // 
             // GroupBox1
             // 
@@ -464,7 +466,7 @@ namespace GradingSystemProject
             // 
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.Green;
-            this.btnSave.Location = new System.Drawing.Point(263, 422);
+            this.btnSave.Location = new System.Drawing.Point(367, 422);
             this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(128, 33);
@@ -484,12 +486,13 @@ namespace GradingSystemProject
             this.btnClearAll.TabIndex = 35;
             this.btnClearAll.Text = "&Clear All";
             this.btnClearAll.UseVisualStyleBackColor = true;
+            this.btnClearAll.Click += new System.EventHandler(this.btnClearAll_Click);
             // 
             // bntCompute
             // 
             this.bntCompute.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bntCompute.ForeColor = System.Drawing.Color.Green;
-            this.bntCompute.Location = new System.Drawing.Point(138, 421);
+            this.bntCompute.Location = new System.Drawing.Point(190, 421);
             this.bntCompute.Margin = new System.Windows.Forms.Padding(4);
             this.bntCompute.Name = "bntCompute";
             this.bntCompute.Size = new System.Drawing.Size(112, 33);
@@ -497,18 +500,6 @@ namespace GradingSystemProject
             this.bntCompute.Text = "C&ompute";
             this.bntCompute.UseVisualStyleBackColor = true;
             this.bntCompute.Click += new System.EventHandler(this.btnCompute_Click);
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.ForeColor = System.Drawing.Color.Green;
-            this.btnUpdate.Location = new System.Drawing.Point(404, 422);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(143, 34);
-            this.btnUpdate.TabIndex = 38;
-            this.btnUpdate.Text = "Update";
-            this.btnUpdate.UseVisualStyleBackColor = true;
             // 
             // cboClass
             // 
@@ -597,7 +588,6 @@ namespace GradingSystemProject
             this.Controls.Add(this.lstStudent);
             this.Controls.Add(this.cboCourse);
             this.Controls.Add(this.cboClass);
-            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnClearAll);
@@ -630,6 +620,10 @@ namespace GradingSystemProject
 
         }
 
+        private void txtName_TextChanged(object sender, EventArgs e)
+        {
+        }
+
         #endregion
 
         internal System.Windows.Forms.Label Label1;
@@ -658,7 +652,6 @@ namespace GradingSystemProject
         internal System.Windows.Forms.Button btnSave;
         internal System.Windows.Forms.Button btnClearAll;
         internal System.Windows.Forms.Button bntCompute;
-        internal System.Windows.Forms.Button btnUpdate;
         internal System.Windows.Forms.TextBox txtAttendancePercent;
         internal System.Windows.Forms.TextBox txtAttendanceEG;
         internal System.Windows.Forms.TextBox txtProjectPercent;

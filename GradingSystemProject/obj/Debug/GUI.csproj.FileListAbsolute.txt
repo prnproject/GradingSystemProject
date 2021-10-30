@@ -32,6 +32,7 @@ E:\NET Project\GradingSystemProject\GradingSystemProject\obj\Debug\GUI.csproj.Co
 E:\NET Project\GradingSystemProject\GradingSystemProject\obj\Debug\GradingSystemProject.TeacherViewForm.resources
 E:\NET Project\GradingSystemProject\GradingSystemProject\bin\Debug\DLL.dll
 E:\NET Project\GradingSystemProject\GradingSystemProject\bin\Debug\DLL.pdb
+<<<<<<< HEAD
 D:\GradingSystemProject\GradingSystemProject\GradingSystemProject\obj\Debug\GUI.csproj.AssemblyReference.cache
 D:\GradingSystemProject\GradingSystemProject\GradingSystemProject\obj\Debug\GradingSystemProject.TeacherViewForm.resources
 D:\GradingSystemProject\GradingSystemProject\GradingSystemProject\obj\Debug\GradingSystemProject.btnLogout.resources
@@ -40,3 +41,42 @@ D:\GradingSystemProject\GradingSystemProject\GradingSystemProject\obj\Debug\GUI.
 D:\GradingSystemProject\GradingSystemProject\GradingSystemProject\obj\Debug\GUI.csproj.CoreCompileInputs.cache
 D:\GradingSystemProject\GradingSystemProject\GradingSystemProject\obj\Debug\GradingSystemProject.exe
 D:\GradingSystemProject\GradingSystemProject\GradingSystemProject\obj\Debug\GradingSystemProject.pdb
+=======
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\GradingSystemProject\bin\Debug\GradingSystemProject.exe.config
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\GradingSystemProject\bin\Debug\GradingSystemProject.exe
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\GradingSystemProject\bin\Debug\GradingSystemProject.pdb
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\GradingSystemProject\bin\Debug\DLL.dll
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\GradingSystemProject\bin\Debug\DTO.dll
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\GradingSystemProject\bin\Debug\BAL.dll
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\GradingSystemProject\bin\Debug\DLL.pdb
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\GradingSystemProject\bin\Debug\DTO.pdb
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\GradingSystemProject\bin\Debug\BAL.pdb
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\GradingSystemProject\obj\Debug\GUI.csprojAssemblyReference.cache
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\GradingSystemProject\obj\Debug\GradingSystemProject.TeacherViewForm.resources
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\GradingSystemProject\obj\Debug\GradingSystemProject.btnLogout.resources
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\GradingSystemProject\obj\Debug\GradingSystemProject.Properties.Resources.resources
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\GradingSystemProject\obj\Debug\GUI.csproj.GenerateResource.cache
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\GradingSystemProject\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\GradingSystemProject\obj\Debug\GUI.csproj.CopyComplete
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\GradingSystemProject\obj\Debug\GradingSystemProject.exe
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\GradingSystemProject\obj\Debug\GradingSystemProject.pdb
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\GradingSystemProject\bin\Debug\GradingSystemProject.exe.config
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\GradingSystemProject\bin\Debug\GradingSystemProject.exe
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\GradingSystemProject\bin\Debug\GradingSystemProject.pdb
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\GradingSystemProject\bin\Debug\DTO.dll
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\GradingSystemProject\bin\Debug\DTO.pdb
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\GradingSystemProject\obj\Debug\GUI.csproj.AssemblyReference.cache
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\GradingSystemProject\obj\Debug\GradingSystemProject.TeacherViewForm.resources
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\GradingSystemProject\obj\Debug\GradingSystemProject.Properties.Resources.resources
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\GradingSystemProject\obj\Debug\GUI.csproj.GenerateResource.cache
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\GradingSystemProject\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\GradingSystemProject\obj\Debug\GUI.csproj.CopyComplete
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\GradingSystemProject\obj\Debug\GradingSystemProject.exe
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\GradingSystemProject\obj\Debug\GradingSystemProject.pdb
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\GradingSystemProject\obj\Debug\GradingSystemProject.StudentViewForm.resources
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\GradingSystemProject\bin\Debug\BLL.dll
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\GradingSystemProject\bin\Debug\DAL.dll
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\GradingSystemProject\bin\Debug\BLL.pdb
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\GradingSystemProject\bin\Debug\DAL.pdb
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\GradingSystemProject\obj\Debug\GradingSystemProject.LoginForm.resources
+>>>>>>> 9256a01780863ab4ac76921e38789918414b1e14

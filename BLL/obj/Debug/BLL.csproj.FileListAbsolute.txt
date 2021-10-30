@@ -1,0 +1,53 @@
+C:\Users\PHU\Downloads\GradingSystemProject-master\GradingSystemProject-master\DLL\bin\Debug\DLL.dll
+C:\Users\PHU\Downloads\GradingSystemProject-master\GradingSystemProject-master\DLL\bin\Debug\DLL.pdb
+C:\Users\PHU\Downloads\GradingSystemProject-master\GradingSystemProject-master\DLL\bin\Debug\DTO.dll
+C:\Users\PHU\Downloads\GradingSystemProject-master\GradingSystemProject-master\DLL\bin\Debug\DTO.pdb
+C:\Users\PHU\Downloads\GradingSystemProject-master\GradingSystemProject-master\DLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\PHU\Downloads\GradingSystemProject-master\GradingSystemProject-master\DLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\PHU\Downloads\GradingSystemProject-master\GradingSystemProject-master\DLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\PHU\Downloads\GradingSystemProject-master\GradingSystemProject-master\DLL\obj\Debug\DLL.dll
+C:\Users\PHU\Downloads\GradingSystemProject-master\GradingSystemProject-master\DLL\obj\Debug\DLL.pdb
+E:\NET Project\GradingSystemProject\DLL\bin\Debug\DLL.dll
+E:\NET Project\GradingSystemProject\DLL\bin\Debug\DLL.pdb
+E:\NET Project\GradingSystemProject\DLL\bin\Debug\DTO.dll
+E:\NET Project\GradingSystemProject\DLL\bin\Debug\DTO.pdb
+E:\NET Project\GradingSystemProject\DLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+E:\NET Project\GradingSystemProject\DLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+E:\NET Project\GradingSystemProject\DLL\obj\Debug\BLL.csproj.CopyComplete
+E:\NET Project\GradingSystemProject\DLL\obj\Debug\DLL.dll
+E:\NET Project\GradingSystemProject\DLL\obj\Debug\DLL.pdb
+E:\NET Project\GradingSystemProject\DLL\bin\Debug\BAL.dll
+E:\NET Project\GradingSystemProject\DLL\bin\Debug\BAL.pdb
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\DLL\bin\Debug\DLL.dll
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\DLL\bin\Debug\DLL.pdb
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\DLL\bin\Debug\BAL.dll
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\DLL\bin\Debug\DTO.dll
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\DLL\bin\Debug\BAL.pdb
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\DLL\bin\Debug\DTO.pdb
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\DLL\obj\Debug\BLL.csprojAssemblyReference.cache
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\DLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\DLL\obj\Debug\BLL.csproj.CopyComplete
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\DLL\obj\Debug\DLL.dll
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\DLL\obj\Debug\DLL.pdb
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\DLL\bin\Debug\DLL.dll
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\DLL\bin\Debug\DLL.pdb
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\DLL\bin\Debug\BAL.dll
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\DLL\bin\Debug\DTO.dll
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\DLL\bin\Debug\BAL.pdb
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\DLL\bin\Debug\DTO.pdb
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\DLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\DLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\DLL\obj\Debug\BLL.csproj.CopyComplete
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\DLL\obj\Debug\DLL.dll
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\DLL\obj\Debug\DLL.pdb
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\BLL\bin\Debug\DTO.dll
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\BLL\bin\Debug\DTO.pdb
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\BLL\obj\Debug\BLL.csproj.CopyComplete
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\BLL\bin\Debug\BLL.dll
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\BLL\bin\Debug\BLL.pdb
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\BLL\bin\Debug\DAL.dll
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\BLL\bin\Debug\DAL.pdb
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\BLL\obj\Debug\BLL.dll
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\BLL\obj\Debug\BLL.pdb
