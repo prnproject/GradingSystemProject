@@ -9,6 +9,6 @@ namespace DAL
 {
     public class Connect
     {
-        protected static SqlConnection conn = new SqlConnection("Data Source=.\\SQLEXPRESS;Initial Catalog=GradingSystem;User ID=sa;Password=admin;");
+        protected static SqlConnection conn = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=GradingSystem;Integrated Security=True;");
     }
 }

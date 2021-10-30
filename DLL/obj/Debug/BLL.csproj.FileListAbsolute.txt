@@ -18,3 +18,25 @@ E:\NET Project\GradingSystemProject\DLL\obj\Debug\DLL.dll
 E:\NET Project\GradingSystemProject\DLL\obj\Debug\DLL.pdb
 E:\NET Project\GradingSystemProject\DLL\bin\Debug\BAL.dll
 E:\NET Project\GradingSystemProject\DLL\bin\Debug\BAL.pdb
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\DLL\bin\Debug\DLL.dll
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\DLL\bin\Debug\DLL.pdb
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\DLL\bin\Debug\BAL.dll
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\DLL\bin\Debug\DTO.dll
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\DLL\bin\Debug\BAL.pdb
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\DLL\bin\Debug\DTO.pdb
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\DLL\obj\Debug\BLL.csprojAssemblyReference.cache
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\DLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\DLL\obj\Debug\BLL.csproj.CopyComplete
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\DLL\obj\Debug\DLL.dll
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\DLL\obj\Debug\DLL.pdb
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\DLL\bin\Debug\DLL.dll
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\DLL\bin\Debug\DLL.pdb
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\DLL\bin\Debug\BAL.dll
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\DLL\bin\Debug\DTO.dll
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\DLL\bin\Debug\BAL.pdb
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\DLL\bin\Debug\DTO.pdb
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\DLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\DLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\DLL\obj\Debug\BLL.csproj.CopyComplete
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\DLL\obj\Debug\DLL.dll
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\DLL\obj\Debug\DLL.pdb

@@ -18,3 +18,21 @@ E:\NET Project\GradingSystemProject\BAL\obj\Debug\DAL.csproj.CoreCompileInputs.c
 E:\NET Project\GradingSystemProject\BAL\obj\Debug\DAL.csproj.CopyComplete
 E:\NET Project\GradingSystemProject\BAL\obj\Debug\BAL.dll
 E:\NET Project\GradingSystemProject\BAL\obj\Debug\BAL.pdb
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\BAL\bin\Debug\BAL.dll
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\BAL\bin\Debug\BAL.pdb
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\BAL\bin\Debug\DTO.dll
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\BAL\bin\Debug\DTO.pdb
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\BAL\obj\Debug\DAL.csprojAssemblyReference.cache
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\BAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\BAL\obj\Debug\DAL.csproj.CopyComplete
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\BAL\obj\Debug\BAL.dll
+E:\My Study\FPT\Fall 2021\PRN211\GradingSystemProject\BAL\obj\Debug\BAL.pdb
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\BAL\bin\Debug\BAL.dll
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\BAL\bin\Debug\BAL.pdb
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\BAL\bin\Debug\DTO.dll
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\BAL\bin\Debug\DTO.pdb
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\BAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\BAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\BAL\obj\Debug\DAL.csproj.CopyComplete
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\BAL\obj\Debug\BAL.dll
+E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\BAL\obj\Debug\BAL.pdb

@@ -110,8 +110,19 @@ namespace GradingSystemProject
 			selectedStudentID = int.Parse(lstStudent.SelectedItems[0].SubItems[0].Text);
 			txtName.Text = lstStudent.SelectedItems[0].SubItems[1].Text;
 
-			UnlockScoreTextBox();
+			Grade courseGrade = teacherbll.GetCourseGradeOfStudent(selectedStudentID, ((Course)cboCourse.SelectedItem).CourseID);
 
+			if(courseGrade != null)
+            {
+				txtAttendanceGrade.Text = courseGrade.AttendenceGrade.ToString();
+				txtProjectGrade.Text = courseGrade.ProjectGrade.ToString();
+				txtWrittenQuizGrade.Text = courseGrade.WrittenGrade.ToString();
+				txtPracticalQuizGrade.Text = courseGrade.PracticalExamGrade.ToString();
+				txtFinalExamGrade.Text = courseGrade.FinalExamGrade.ToString();
+				txtAverageGrade.Text = courseGrade.FinalAvarageGrade.ToString();
+			}
+
+			UnlockScoreTextBox();
 		}
 
         private void btnCompute_Click(object sender, EventArgs e)
@@ -236,7 +247,22 @@ namespace GradingSystemProject
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-			ResetTextBox();
+            {
+
+                if (gradeTextBoxes.Any(tb => tb.Text.Trim() == ""))
+                {
+                    MessageBox.Show("Can not delete! Must fill all field or compute first!");
+                    return;
+                }
+
+                int studentID = selectedStudentID;
+                int courseID = ((Course)cboCourse.SelectedItem).CourseID;
+
+                string report = teacherbll.DeleteGrade(studentID, courseID);
+
+                MessageBox.Show(report);
+                ResetTextBox();
+            }
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -255,6 +281,11 @@ namespace GradingSystemProject
 			string report = teacherbll.SaveGrade(studentID, courseID, grades);
 
 			MessageBox.Show(report);
+        }
+
+        private void btnClearAll_Click(object sender, EventArgs e)
+        {
+            ResetTextBox();
         }
     }
 }
