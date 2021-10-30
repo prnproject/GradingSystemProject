@@ -18,3 +18,14 @@ E:\NET Project\GradingSystemProject\DLL\obj\Debug\DLL.dll
 E:\NET Project\GradingSystemProject\DLL\obj\Debug\DLL.pdb
 E:\NET Project\GradingSystemProject\DLL\bin\Debug\BAL.dll
 E:\NET Project\GradingSystemProject\DLL\bin\Debug\BAL.pdb
+D:\GradingSystemProject\GradingSystemProject\DLL\bin\Debug\DLL.dll
+D:\GradingSystemProject\GradingSystemProject\DLL\bin\Debug\DLL.pdb
+D:\GradingSystemProject\GradingSystemProject\DLL\bin\Debug\BAL.dll
+D:\GradingSystemProject\GradingSystemProject\DLL\bin\Debug\DTO.dll
+D:\GradingSystemProject\GradingSystemProject\DLL\bin\Debug\BAL.pdb
+D:\GradingSystemProject\GradingSystemProject\DLL\bin\Debug\DTO.pdb
+D:\GradingSystemProject\GradingSystemProject\DLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\GradingSystemProject\GradingSystemProject\DLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\GradingSystemProject\GradingSystemProject\DLL\obj\Debug\BLL.csproj.CopyComplete
+D:\GradingSystemProject\GradingSystemProject\DLL\obj\Debug\DLL.dll
+D:\GradingSystemProject\GradingSystemProject\DLL\obj\Debug\DLL.pdb

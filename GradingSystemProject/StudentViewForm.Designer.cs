@@ -71,8 +71,10 @@ namespace GradingSystemProject
             // 
             // cboSubject
             // 
+            this.cboSubject.BackColor = System.Drawing.SystemColors.Window;
+            this.cboSubject.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
             this.cboSubject.FormattingEnabled = true;
-            this.cboSubject.Location = new System.Drawing.Point(17, 211);
+            this.cboSubject.Location = new System.Drawing.Point(20, 211);
             this.cboSubject.Name = "cboSubject";
             this.cboSubject.Size = new System.Drawing.Size(273, 24);
             this.cboSubject.TabIndex = 2;

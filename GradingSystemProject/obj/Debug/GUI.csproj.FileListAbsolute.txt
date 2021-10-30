@@ -32,3 +32,11 @@ E:\NET Project\GradingSystemProject\GradingSystemProject\obj\Debug\GUI.csproj.Co
 E:\NET Project\GradingSystemProject\GradingSystemProject\obj\Debug\GradingSystemProject.TeacherViewForm.resources
 E:\NET Project\GradingSystemProject\GradingSystemProject\bin\Debug\DLL.dll
 E:\NET Project\GradingSystemProject\GradingSystemProject\bin\Debug\DLL.pdb
+D:\GradingSystemProject\GradingSystemProject\GradingSystemProject\obj\Debug\GUI.csproj.AssemblyReference.cache
+D:\GradingSystemProject\GradingSystemProject\GradingSystemProject\obj\Debug\GradingSystemProject.TeacherViewForm.resources
+D:\GradingSystemProject\GradingSystemProject\GradingSystemProject\obj\Debug\GradingSystemProject.btnLogout.resources
+D:\GradingSystemProject\GradingSystemProject\GradingSystemProject\obj\Debug\GradingSystemProject.Properties.Resources.resources
+D:\GradingSystemProject\GradingSystemProject\GradingSystemProject\obj\Debug\GUI.csproj.GenerateResource.cache
+D:\GradingSystemProject\GradingSystemProject\GradingSystemProject\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+D:\GradingSystemProject\GradingSystemProject\GradingSystemProject\obj\Debug\GradingSystemProject.exe
+D:\GradingSystemProject\GradingSystemProject\GradingSystemProject\obj\Debug\GradingSystemProject.pdb

@@ -18,3 +18,11 @@ E:\NET Project\GradingSystemProject\BAL\obj\Debug\DAL.csproj.CoreCompileInputs.c
 E:\NET Project\GradingSystemProject\BAL\obj\Debug\DAL.csproj.CopyComplete
 E:\NET Project\GradingSystemProject\BAL\obj\Debug\BAL.dll
 E:\NET Project\GradingSystemProject\BAL\obj\Debug\BAL.pdb
+D:\GradingSystemProject\GradingSystemProject\BAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\GradingSystemProject\GradingSystemProject\BAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\GradingSystemProject\GradingSystemProject\BAL\obj\Debug\BAL.dll
+D:\GradingSystemProject\GradingSystemProject\BAL\obj\Debug\BAL.pdb
+D:\GradingSystemProject\GradingSystemProject\BAL\bin\Debug\BAL.dll
+D:\GradingSystemProject\GradingSystemProject\BAL\bin\Debug\BAL.pdb
+D:\GradingSystemProject\GradingSystemProject\BAL\bin\Debug\DTO.dll
+D:\GradingSystemProject\GradingSystemProject\BAL\bin\Debug\DTO.pdb
