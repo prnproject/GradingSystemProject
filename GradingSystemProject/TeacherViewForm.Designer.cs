@@ -76,6 +76,7 @@ namespace GradingSystemProject
             this.colStudentMail = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label2 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.GroupBox1.SuspendLayout();
             this.GroupBox4.SuspendLayout();
             this.GroupBox2.SuspendLayout();
@@ -578,11 +579,23 @@ namespace GradingSystemProject
             this.label10.TabIndex = 42;
             this.label10.Text = "Class:";
             // 
+            // btnLogout
+            // 
+            this.btnLogout.ForeColor = System.Drawing.Color.Green;
+            this.btnLogout.Location = new System.Drawing.Point(983, 25);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(142, 37);
+            this.btnLogout.TabIndex = 100;
+            this.btnLogout.Text = "Logout";
+            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
             // TeacherViewForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1150, 650);
+            this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lstStudent);
@@ -671,5 +684,6 @@ namespace GradingSystemProject
         private System.Windows.Forms.ColumnHeader colStudentMail;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button btnLogout;
     }
 }

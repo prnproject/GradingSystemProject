@@ -25,15 +25,15 @@ namespace BLL
             return StudentManager.GetStudentsByClassID(@class.ClassID);
         }
 
-        public string SaveGrade(int gradeStudentID, int gradeCourseID,int[] grades)
+        public string SaveGrade(int gradeStudentID, int gradeCourseID,int[] grades, string resultText)
         {
             if (GradeManager.Exists(gradeStudentID, gradeCourseID))
             {
-                return GradeManager.UpdateGrade(gradeStudentID, gradeCourseID, grades[0], grades[1], grades[2], grades[3], grades[4], grades[5]);
+                return GradeManager.UpdateGrade(gradeStudentID, gradeCourseID, grades[0], grades[1], grades[2], grades[3], grades[4], grades[5], resultText);
             }
             else
             {
-                return GradeManager.InsertGrade(gradeStudentID, gradeCourseID, grades[0], grades[1], grades[2], grades[3], grades[4], grades[5]);
+                return GradeManager.InsertGrade(gradeStudentID, gradeCourseID, grades[0], grades[1], grades[2], grades[3], grades[4], grades[5], resultText);
             }
             
         }
@@ -45,7 +45,7 @@ namespace BLL
 
         public Grade GetCourseGradeOfStudent(int GradeStudentID, int GradeCourseID)
         {
-            return GradeManager.getCourseGradeOfStudent(GradeStudentID, GradeCourseID);
+            return GradeManager.GetCourseGradeOfStudent(GradeStudentID, GradeCourseID);
         }
     }
 }

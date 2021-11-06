@@ -15,18 +15,20 @@ namespace DTO
         int writtenGrade;
         int practicalExamGrade;
         int finalExamGrade;
-        int finalAvarageGrade;
+        int averageGrade;
+        String resultText;
 
-        public Grade(int gradeStudentID, int gradeCourseID, int attendenceGrade, int projectGrade, int writtenGrade, int practicalExamGrade, int finalExamGrade, int finalAvarageGrade)
+        public Grade(int gradeStudentID, int gradeCourseID, int attendenceGrade, int projectGrade, int writtenGrade, int practicalExamGrade, int finalExamGrade, int averageGrade, string resultText)
         {
-            this.GradeStudentID = gradeStudentID;
-            this.GradeCourseID = gradeCourseID;
-            this.AttendenceGrade = attendenceGrade;
-            this.ProjectGrade = projectGrade;
-            this.WrittenGrade = writtenGrade;
-            this.PracticalExamGrade = practicalExamGrade;
-            this.FinalExamGrade = finalExamGrade;
-            this.FinalAvarageGrade = finalAvarageGrade;
+            GradeStudentID = gradeStudentID;
+            GradeCourseID = gradeCourseID;
+            AttendenceGrade = attendenceGrade;
+            ProjectGrade = projectGrade;
+            WrittenGrade = writtenGrade;
+            PracticalExamGrade = practicalExamGrade;
+            FinalExamGrade = finalExamGrade;
+            AvarageGrade = averageGrade;
+            ResultText = resultText;
         }
 
         public int GradeStudentID { get => gradeStudentID; set => gradeStudentID = value; }
@@ -36,7 +38,8 @@ namespace DTO
         public int WrittenGrade { get => writtenGrade; set => writtenGrade = value; }
         public int PracticalExamGrade { get => practicalExamGrade; set => practicalExamGrade = value; }
         public int FinalExamGrade { get => finalExamGrade; set => finalExamGrade = value; }
-        public int FinalAvarageGrade { get => finalAvarageGrade; set => finalAvarageGrade = value; }
+        public int AvarageGrade { get => averageGrade; set => averageGrade = value; }
+        public string ResultText { get => resultText; set => resultText = value; }
     }
 }
 

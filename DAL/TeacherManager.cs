@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DTO;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -10,10 +11,8 @@ namespace DAL
 {
     public class TeacherManager : Connect
     {
-        public static int getTeacherIDByAccountID(int accountID)
+        public static Teacher GetTeacherByAccountID(int accountID)
         {
-            try
-            {
                 if (conn.State == ConnectionState.Closed)
                 {
                     conn.Open();
@@ -21,22 +20,46 @@ namespace DAL
 
                 SqlCommand command = new SqlCommand($"select * from Teacher where TeacherAccountID={accountID}", conn);
 
-                var r = command.ExecuteReader();
-
-                if (r.Read())
+                SqlDataReader reader = command.ExecuteReader();
+            try
+            {
+                if (reader.Read())
                 {
-                    return r.GetInt32(0);
+                    return new Teacher(reader.GetInt32(0), reader.GetInt32(1), reader.GetString(2), reader.GetString(3), reader.GetString(4));
                 }
-            }
-            catch (Exception)            {
-                return -1;
-                throw;
+                return null;
             }
             finally
             {
-                conn.Close();
+                reader.Close();
             }
-            return -1;
+        }
+
+        public static Teacher GetTeacherByTeacherID(int teacherID)
+        {
+            if (conn.State == ConnectionState.Closed)
+            {
+                conn.Open();
+            }
+
+            SqlCommand command = new SqlCommand($"select * from Teacher where TeacherID={teacherID}", conn);
+
+            Console.WriteLine(command.CommandText);
+
+            SqlDataReader reader = command.ExecuteReader();
+            try
+            {
+                if (reader.Read())
+                {
+                    return new Teacher(reader.GetInt32(0), reader.GetInt32(1), reader.GetString(2), reader.GetString(3), reader.GetString(4));
+                }
+            }
+            finally
+            {
+                reader.Close();
+                Console.WriteLine("TeacherManager conn " + conn.State);
+            }
+            return null;
         }
     }
 }

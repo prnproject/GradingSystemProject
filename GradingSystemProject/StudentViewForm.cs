@@ -1,4 +1,5 @@
-﻿using DTO;
+﻿using BLL;
+using DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,46 +20,84 @@ namespace GradingSystemProject
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
+        StudentFormBLL studentFormBLL;
+        Student student;
+        Class @class;
+        List<Teaching> teachings;
 
-        }
-        string conn = "Data Source=LAPTOP-B9VMSNC3SQLEXPRESS;Initial Catalog=GradingSystem;Persist Security Info=True;User ID=sa;Password=123";
-        SqlDataAdapter adapter;
-        DataSet dataSet;
+        public Student Student { get => student; set => student = value; }
+
         private void Form2_Load(object sender, EventArgs e)
         {
-            adapter = new SqlDataAdapter("Select * From Grade;select CourseName from Course",conn);
-            dataSet = new DataSet();
-            adapter.Fill(dataSet);
+            studentFormBLL = new StudentFormBLL();
+            Class @class = studentFormBLL.GetClass(student.StudentClassID);
+
+            txtStudent.Text = "Hello, " + Student.StudentName;
+            txtClass.Text = "Class: " + @class.ClassName;
+
+            teachings = studentFormBLL.GetTeacherTeachingCourseByStudentID(Student.StudentID);
+
+            foreach(Teaching teaching in teachings)
+            {
+                ListViewItem item = new ListViewItem(teaching.Course.CourseName);
+                item.SubItems.AddRange(new String[] {teaching.Teacher.TeacherName });
+                lstTeacherCourse.Items.Add(item);
+                Console.WriteLine(lstTeacherCourse.Items[0].SubItems[0].Text);
+            }
+
+            lblAttendance.Text = "";
+            lblWritten.Text = "";
+            lblProject.Text = "";
+            lblPractical.Text = "";
+            lblFinal.Text = "";
+            lblAverage.Text = "";
+            lblResult.Text = "";
         }
 
         private void btnExportReport_Click(object sender, EventArgs e)
         {
-            dgvGrade.DataSource = dataSet.Tables[0];
-
-        }
-        public string UserID;
-        public string ClassID;
-
-        private void txt_Load(object sender, EventArgs e)
-        {
-            MessageBox.Show("Hello, " + Student.studentName);
-            txtStudent.Text = "Hello, " + Student.studentName;
-            MessageBox.Show("Class: " + Student.studentClassId);
-            txtClass.Text = "Class: " + Student.studentClassID;
-        }
-
-
-
-        private void label2_Click(object sender, EventArgs e)
-        {
 
         }
 
-        private void cboSubject_SelectedIndexChanged(object sender, EventArgs e)
+        private void lstTeacherCourse_SelectedIndexChanged(object sender, EventArgs e)
         {
-            cboSubject.DataSource = dataSet.Tables[1];
+            if (lstTeacherCourse.SelectedItems.Count == 0) return;
+
+            int CourseID = teachings[lstTeacherCourse.SelectedItems[0].Index].Course.CourseID;
+
+            Grade grade = studentFormBLL.GetCourseGradeOfStudent(student.StudentID, CourseID);
+
+            if (grade == null)
+            {
+                lblAttendance.Text = "";
+                lblWritten.Text = "";
+                lblProject.Text = "";
+                lblPractical.Text = "";
+                lblFinal.Text = "";
+                lblAverage.Text = "";
+                lblResult.Text = "";
+                return;
+            }
+
+            lblAttendance.Text = grade.AttendenceGrade.ToString();
+            lblWritten.Text = grade.WrittenGrade.ToString();
+            lblProject.Text = grade.ProjectGrade.ToString();
+            lblPractical.Text = grade.PracticalExamGrade.ToString();
+            lblFinal.Text = grade.FinalExamGrade.ToString();
+            lblAverage.Text = grade.AttendenceGrade.ToString();
+            lblResult.Text = grade.ResultText;
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnExportReport_Click_1(object sender, EventArgs e)
+        {
+            ReportForm ReportForm = new ReportForm();
+            ReportForm.StudentID = student.StudentID.ToString();
+            ReportForm.Show();
         }
     }
 }

@@ -19,15 +19,41 @@ namespace DAL
             }
 
             SqlCommand command = new SqlCommand($"select * from [Course] ", conn);
-            List<Course> subject = new List<Course>();
-            SqlDataReader reader = command.ExecuteReader();
+            SqlDataReader reader = null;
+            List<Course> courses = new List<Course>();
+            reader = command.ExecuteReader();
+
             while (reader.Read())
             {
-                subject.Add(new Course(reader.GetInt32(0),reader.GetString(1)));
+                courses.Add(new Course(reader.GetInt32(0),reader.GetString(1)));
 
             }
-            conn.Close();
-            return subject;
+            if (reader != null) reader.Close();
+            return courses;
+        }
+
+        public static Course GetCourseByCourseID(int CourseID)
+        {
+            if (conn.State == ConnectionState.Closed)
+            {
+                conn.Open();
+            }
+
+            SqlCommand command = new SqlCommand($"select * from Course where CourseID={CourseID}", conn);
+            SqlDataReader reader = command.ExecuteReader();
+
+            try
+            {
+                if (reader.Read())
+                {
+                    return new Course(reader.GetInt32(0), reader.GetString(1));
+                }
+                return null; ;
+            }
+            finally
+            {
+                reader.Close();;
+            }
         }
     }
 }

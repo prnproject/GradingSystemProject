@@ -15,9 +15,14 @@ namespace BLL
             return AccountManager.GetAccount(accountUserName, accountPassword);
         }
 
-        public int getTeacherIDByAccountID(int accountID)
+        public Teacher GetTeacherByAccountID(int accountID)
         {
-            return TeacherManager.getTeacherIDByAccountID(accountID);
+            return TeacherManager.GetTeacherByAccountID(accountID);
+        }
+
+        public Student GetStudentByAccountID(int accountID)
+        {
+            return StudentManager.GetStudentByAccountID(accountID);
         }
     }
 }

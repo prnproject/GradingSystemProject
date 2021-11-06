@@ -15,6 +15,10 @@ namespace DTO
         string studentPhoneNumber;
         string studentMail;
 
+        public Student()
+        {
+        }
+
         public Student(int studentID, int studentClassID, int studentAccountID, string studentName, string studentPhoneNumber, string studentMail)
         {
             StudentID = studentID;

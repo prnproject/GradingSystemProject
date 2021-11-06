@@ -21,13 +21,13 @@ namespace GradingSystemProject
 
         }
 
-		int teacherID;
+		Teacher teacher;
 
 		TeacherFormBLL teacherbll = new TeacherFormBLL();
 		int selectedStudentID = -1;
 		TextBox[] gradeTextBoxes;
 
-        public int TeacherID { get => teacherID; set => teacherID = value; }
+        public Teacher Teacher { get => teacher; set => teacher = value; }
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -78,7 +78,7 @@ namespace GradingSystemProject
 			selectedStudentID = -1;
 			ResetTextBox();
 			LockScoreTextBox();			
-			List <Class> classes = teacherbll.GetClassesByCourse(teacherID, (Course)cboCourse.SelectedItem);
+			List <Class> classes = teacherbll.GetClassesByCourse(teacher.TeacherID, (Course)cboCourse.SelectedItem);
 			cboClass.Text = "";
 			cboClass.Items.Clear();
 			cboClass.Items.AddRange(classes.ToArray());
@@ -123,7 +123,7 @@ namespace GradingSystemProject
 				txtWrittenQuizGrade.Text = courseGrade.WrittenGrade.ToString();
 				txtPracticalQuizGrade.Text = courseGrade.PracticalExamGrade.ToString();
 				txtFinalExamGrade.Text = courseGrade.FinalExamGrade.ToString();
-				txtAverageGrade.Text = courseGrade.FinalAvarageGrade.ToString();
+				txtAverageGrade.Text = courseGrade.AvarageGrade.ToString();
 			}
 
 			UnlockScoreTextBox();
@@ -272,7 +272,7 @@ namespace GradingSystemProject
         private void btnSave_Click(object sender, EventArgs e)
         {
 
-			if (gradeTextBoxes.Any(tb => tb.Text.Trim() == ""))
+			if (gradeTextBoxes.Any(tb => tb.Text.Trim() == "") || txtRemarks.Text =="")
             {
 				MessageBox.Show("Can not save! Must fill all field or compute first!");
 				return;
@@ -281,8 +281,9 @@ namespace GradingSystemProject
 			int studentID = selectedStudentID;
 			int courseID = ((Course)cboCourse.SelectedItem).CourseID;
 			int[] grades = gradeTextBoxes.Select(tb => (int)double.Parse(tb.Text)).ToArray();
+			String resultText = txtRemarks.Text;
 
-			string report = teacherbll.SaveGrade(studentID, courseID, grades);
+			string report = teacherbll.SaveGrade(studentID, courseID, grades, resultText);
 
 			MessageBox.Show(report);
         }
@@ -290,6 +291,11 @@ namespace GradingSystemProject
         private void btnClearAll_Click(object sender, EventArgs e)
         {
             ResetTextBox();
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+			this.Close();
         }
     }
 }

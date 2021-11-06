@@ -14,7 +14,7 @@ namespace DAL
     {
         public static Account GetAccount(string accountUserName, string accountPassword)
         {
-
+            SqlDataReader r = null;
             try
             {
                 if (conn.State == ConnectionState.Closed)
@@ -26,7 +26,7 @@ namespace DAL
 
                 Console.WriteLine(command.CommandText);
 
-                var r = command.ExecuteReader();
+                r = command.ExecuteReader();
 
                 if (r.Read())
                 {
@@ -39,7 +39,8 @@ namespace DAL
             }
             finally
             {
-                conn.Close();
+                if (r != null) r.Close();
+                Console.WriteLine(conn.State);
             }
 
             return null;

@@ -39,22 +39,30 @@ namespace GradingSystemProject
 
             if (account != null)
             {
-                if(account.AccountRole == "Teacher")
+                try
                 {
-                    this.Hide();
-                    var teacherViewForm = new TeacherViewForm();
-                    teacherViewForm.Closed += (s, args) => { this.Reset();  this.Show(); };
-                    teacherViewForm.TeacherID = loginFormBLL.getTeacherIDByAccountID(account.AccountID);
-                    teacherViewForm.Show();
-                    return;
+                    if (account.AccountRole == "Teacher")
+                    {
+                        this.Hide();
+                        var teacherViewForm = new TeacherViewForm();
+                        teacherViewForm.Closed += (s, args) => { this.Reset(); this.Show(); };
+                        teacherViewForm.Teacher = loginFormBLL.GetTeacherByAccountID(account.AccountID);
+                        teacherViewForm.Show();
+                        return;
+                    }
+                    else
+                    {
+                        this.Hide();
+                        var studentViewForm = new StudentViewForm();
+                        studentViewForm.Closed += (s, args) => { this.Reset(); this.Show(); };
+                        studentViewForm.Student = loginFormBLL.GetStudentByAccountID(account.AccountID);
+                        studentViewForm.Show();
+                        return;
+                    }
                 }
-                else
+                finally
                 {
-                    this.Hide();
-                    var studentViewForm = new StudentViewForm();
-                    studentViewForm.Closed += (s, args) => { this.Reset(); this.Show(); };
-                    studentViewForm.Show();
-                    return;
+                    txtUsername.Focus();
                 }
             }
             MessageBox.Show("Tên tài khoản hoặc mật khẩu không đúng !");
@@ -72,6 +80,7 @@ namespace GradingSystemProject
             {
                 btnOK_Click(sender, e);
                 e.Handled = true;
+                e.SuppressKeyPress = true;
             }
         }
     }

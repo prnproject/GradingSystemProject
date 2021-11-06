@@ -11,7 +11,7 @@ namespace DAL
 {
     public class GradeManager : Connect
     {
-        public static String InsertGrade(int gradeStudentID, int gradeCourse, int attendenceGrade, int projectGrade, int writtenGrade, int practicalExamGrade, int finalExamGrade, int finalAverageGrade)
+        public static String InsertGrade(int gradeStudentID, int gradeCourse, int attendenceGrade, int projectGrade, int writtenGrade, int practicalExamGrade, int finalExamGrade, int averageGrade, String resultText)
         {
             try
             {
@@ -20,7 +20,7 @@ namespace DAL
                     conn.Open();
                 }
 
-                SqlCommand command = new SqlCommand($"insert into [Grade] values('{gradeStudentID}','{gradeCourse}','{attendenceGrade}','{projectGrade}','{writtenGrade}','{practicalExamGrade}','{finalExamGrade}','{finalAverageGrade}')", conn);
+                SqlCommand command = new SqlCommand($"insert into [Grade] values('{gradeStudentID}','{gradeCourse}','{attendenceGrade}','{projectGrade}','{writtenGrade}','{practicalExamGrade}','{finalExamGrade}','{averageGrade}', '{resultText}')", conn);
 
                 if (command.ExecuteNonQuery() > 0)
                 {
@@ -31,14 +31,10 @@ namespace DAL
             {
                 return ex.Message + "\nInsert Failed!";
             }
-            finally
-            {
-                conn.Close();
-            }
             return "Insert Success!";
         }
 
-        public static String UpdateGrade(int gradeStudentID, int gradeCourseID, int attendenceGrade, int projectGrade, int writtenGrade, int practicalExamGrade, int finalExamGrade, int finalAverageGrade)
+        public static String UpdateGrade(int gradeStudentID, int gradeCourseID, int attendenceGrade, int projectGrade, int writtenGrade, int practicalExamGrade, int finalExamGrade, int averageGrade, String resultText)
         {
             try
             {
@@ -47,9 +43,10 @@ namespace DAL
                     conn.Open();
                 }
 
-                SqlCommand command = new SqlCommand($"update Grade set AttendanceGrade='{attendenceGrade}',ProjectGrade='{projectGrade}',WrittenGrade='{writtenGrade}', PracticalExamGrade='{practicalExamGrade}',FinalExamGrade='{finalExamGrade}',FinalAverageGrade='{finalAverageGrade}' where GradeStudentID='{gradeStudentID}' and GradeCourseID='{gradeCourseID}' ", conn);
+                SqlCommand command = new SqlCommand($"update Grade set AttendanceGrade='{attendenceGrade}',ProjectGrade='{projectGrade}',WrittenGrade='{writtenGrade}', PracticalExamGrade='{practicalExamGrade}',FinalExamGrade='{finalExamGrade}',AverageGrade='{averageGrade}', ResultText='{resultText}' where GradeStudentID='{gradeStudentID}' and GradeCourseID='{gradeCourseID}' ", conn);
 
-                
+
+
 
                 if (command.ExecuteNonQuery() > 0)
                 {
@@ -59,10 +56,6 @@ namespace DAL
             catch (Exception ex)
             {
                 return ex.Message + "\nUpdate Failed!";
-            }
-            finally
-            {
-                conn.Close();
             }
             return "Update Failed!";
         }
@@ -87,10 +80,6 @@ namespace DAL
             {
                 throw;
             }
-            finally
-            {
-                conn.Close();
-            }
             return false;
         }
 
@@ -103,7 +92,7 @@ namespace DAL
                     conn.Open();
                 }
 
-                SqlCommand command = new SqlCommand($"update Grade set AttendanceGrade='0',ProjectGrade='0',WrittenGrade='0', PracticalExamGrade='0',FinalExamGrade='0',FinalAverageGrade='0' where GradeStudentID='{gradeStudentID} and GradeCourseID='{gradeCourseID}'", conn);
+                SqlCommand command = new SqlCommand($"update Grade set AttendanceGrade='0',ProjectGrade='0',WrittenGrade='0', PracticalExamGrade='0',FinalExamGrade='0',AverageGrade='0' where GradeStudentID='{gradeStudentID} and GradeCourseID='{gradeCourseID}'", conn);
 
                 if (command.ExecuteNonQuery() > 0)
                 {
@@ -113,45 +102,39 @@ namespace DAL
             catch (Exception ex)
             {
                 return ex.Message + "\nDelete Failed!";
-            }
-            finally
-            {
-                conn.Close();
-            }          
+            }       
             return "Delete Failed!";
         }
 
-        public static Grade getCourseGradeOfStudent(int gradeStudentID, int gradeCourseID)
+        public static Grade GetCourseGradeOfStudent(int gradeStudentID, int gradeCourseID)
         {
+            
+
+            if (conn.State == ConnectionState.Closed)
+            {
+                conn.Open();
+            }
+
+            SqlCommand command = new SqlCommand($"select * from Grade where GradeStudentID='{gradeStudentID}' and GradeCourseID='{gradeCourseID}'", conn);
+
+            SqlDataReader reader = command.ExecuteReader();
             try
             {
-                if (conn.State == ConnectionState.Closed)
+                if (reader.Read())
                 {
-                    conn.Open();
+                    int attendanceGrade = reader.GetInt32(2);
+                    int projectGrade = reader.GetInt32(3);
+                    int writtenGrade = reader.GetInt32(4);
+                    int practicalGrade = reader.GetInt32(5);
+                    int finalExamGrade = reader.GetInt32(6);
+                    int averageGrade = reader.GetInt32(7);
+                    String resultText = reader.GetString(8);
+                    return new Grade(gradeStudentID, gradeCourseID, attendanceGrade, projectGrade, writtenGrade, practicalGrade, finalExamGrade, averageGrade, resultText);
                 }
-
-                SqlCommand command = new SqlCommand($"select * from Grade where GradeStudentID='{gradeStudentID}' and GradeCourseID='{gradeCourseID}'", conn);
-
-                var r = command.ExecuteReader();
-
-                if (r.Read())
-                {
-                    int attendanceGrade = r.GetInt32(2);
-                    int projectGrade = r.GetInt32(3);
-                    int writtenGrade = r.GetInt32(4);
-                    int practicalGrade = r.GetInt32(5);
-                    int finalExamGrade = r.GetInt32(6);
-                    int finalAverageGrade = r.GetInt32(7);
-                    return new Grade(gradeStudentID, gradeCourseID, attendanceGrade, projectGrade, writtenGrade, practicalGrade, finalExamGrade, finalAverageGrade);
-                }
-            }
-            catch (Exception)
-            {
-                throw;
             }
             finally
             {
-                conn.Close();
+                reader.Close();;
             }
             return null;
         }

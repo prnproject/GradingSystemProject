@@ -45,3 +45,14 @@ E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\DAL\bin\Debug\
 E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\DAL\bin\Debug\DAL.pdb
 E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\DAL\obj\Debug\DAL.dll
 E:\NET Project\Hoàng - GradingSystemProject\GradingSystemProject\DAL\obj\Debug\DAL.pdb
+E:\NET Project\Hiếu - GradingSystemProject\GradingSystemProject\DAL\bin\Debug\DAL.dll
+E:\NET Project\Hiếu - GradingSystemProject\GradingSystemProject\DAL\bin\Debug\DAL.pdb
+E:\NET Project\Hiếu - GradingSystemProject\GradingSystemProject\DAL\bin\Debug\DTO.dll
+E:\NET Project\Hiếu - GradingSystemProject\GradingSystemProject\DAL\bin\Debug\DTO.pdb
+E:\NET Project\Hiếu - GradingSystemProject\GradingSystemProject\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+E:\NET Project\Hiếu - GradingSystemProject\GradingSystemProject\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\NET Project\Hiếu - GradingSystemProject\GradingSystemProject\DAL\obj\Debug\DAL.csproj.CopyComplete
+E:\NET Project\Hiếu - GradingSystemProject\GradingSystemProject\DAL\obj\Debug\DAL.dll
+E:\NET Project\Hiếu - GradingSystemProject\GradingSystemProject\DAL\obj\Debug\DAL.pdb
+E:\NET Project\Hiếu - GradingSystemProject\GradingSystemProject\DAL\bin\Debug\System.Data.SqlClient.dll
+E:\NET Project\Hiếu - GradingSystemProject\GradingSystemProject\DAL\bin\Debug\System.Data.SqlClient.xml

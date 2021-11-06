@@ -66,19 +66,19 @@ namespace GradingSystemProject
             // txtUsername
             // 
             this.txtUsername.Location = new System.Drawing.Point(229, 110);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(253, 22);
-            this.txtUsername.TabIndex = 2;
+            this.txtUsername.TabIndex = 0;
             // 
             // txtPassword
             // 
             this.txtPassword.Location = new System.Drawing.Point(229, 182);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(253, 22);
-            this.txtPassword.TabIndex = 3;
+            this.txtPassword.TabIndex = 1;
             this.txtPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPassword_KeyDown);
             // 
             // label3
@@ -97,10 +97,10 @@ namespace GradingSystemProject
             // btnCancel
             // 
             this.btnCancel.Location = new System.Drawing.Point(308, 266);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(176, 46);
-            this.btnCancel.TabIndex = 5;
+            this.btnCancel.TabIndex = 3;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
@@ -108,10 +108,10 @@ namespace GradingSystemProject
             // btnOK
             // 
             this.btnOK.Location = new System.Drawing.Point(75, 266);
-            this.btnOK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(4);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(176, 46);
-            this.btnOK.TabIndex = 6;
+            this.btnOK.TabIndex = 2;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
@@ -128,7 +128,7 @@ namespace GradingSystemProject
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "LoginForm";
             this.Text = "Form2";
             this.ResumeLayout(false);
