@@ -63,7 +63,8 @@ create table Grade(
 	WrittenGrade int default 0,
 	PracticalExamGrade int default 0,
 	FinalExamGrade int default 0,
-	FinalAverageGrade int default 0,
+	AverageGrade int default 0,
+	ResultText varchar(10),
 	constraint pk_Grade primary key (GradeStudentID, GradeCourseID),
 	constraint fk_GradeStudentID foreign key (GradeStudentID) references Student(StudentID),
 	constraint fk_GradeCourseID foreign key (GradeCourseID) references Course(CourseID)
