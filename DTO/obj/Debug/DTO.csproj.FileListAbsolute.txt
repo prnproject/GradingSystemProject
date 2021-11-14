@@ -31,3 +31,12 @@ E:\NET Project\Hiếu - GradingSystemProject\GradingSystemProject\DTO\obj\Debug\
 E:\NET Project\Hiếu - GradingSystemProject\GradingSystemProject\DTO\bin\Debug\Newtonsoft.Json.dll
 E:\NET Project\Hiếu - GradingSystemProject\GradingSystemProject\DTO\bin\Debug\Newtonsoft.Json.xml
 E:\NET Project\Hiếu - GradingSystemProject\GradingSystemProject\DTO\obj\Debug\DTO.csproj.CopyComplete
+E:\NET Project\GradingSystemProject\GradingSystemProject\DTO\bin\Debug\DTO.dll
+E:\NET Project\GradingSystemProject\GradingSystemProject\DTO\bin\Debug\DTO.pdb
+E:\NET Project\GradingSystemProject\GradingSystemProject\DTO\bin\Debug\Newtonsoft.Json.dll
+E:\NET Project\GradingSystemProject\GradingSystemProject\DTO\bin\Debug\Newtonsoft.Json.xml
+E:\NET Project\GradingSystemProject\GradingSystemProject\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+E:\NET Project\GradingSystemProject\GradingSystemProject\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+E:\NET Project\GradingSystemProject\GradingSystemProject\DTO\obj\Debug\DTO.csproj.CopyComplete
+E:\NET Project\GradingSystemProject\GradingSystemProject\DTO\obj\Debug\DTO.dll
+E:\NET Project\GradingSystemProject\GradingSystemProject\DTO\obj\Debug\DTO.pdb

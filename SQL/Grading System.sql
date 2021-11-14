@@ -1,5 +1,5 @@
 ﻿create database GradingSystem
-
+go
 use GradingSystem
 
 create table Account(
@@ -69,6 +69,10 @@ create table Grade(
 	constraint fk_GradeStudentID foreign key (GradeStudentID) references Student(StudentID),
 	constraint fk_GradeCourseID foreign key (GradeCourseID) references Course(CourseID)
 )
+
+create view CourseGradeReport as
+select GradeStudentID, CourseName, AttendanceGrade, ProjectGrade,WrittenGrade, PracticalExamGrade, FinalExamGrade, AverageGrade, ResultText
+from Grade inner join Course on Grade.GradeCourseID =Course.CourseID 
 
 insert into Account values 
 ('tea2033', '123123', 'Teacher'),
