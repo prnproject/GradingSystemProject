@@ -29,10 +29,12 @@ namespace BLL
         {
             if (GradeManager.Exists(gradeStudentID, gradeCourseID))
             {
+                Console.WriteLine("update");
                 return GradeManager.UpdateGrade(gradeStudentID, gradeCourseID, grades[0], grades[1], grades[2], grades[3], grades[4], grades[5], resultText);
             }
             else
             {
+                Console.WriteLine("insert");
                 return GradeManager.InsertGrade(gradeStudentID, gradeCourseID, grades[0], grades[1], grades[2], grades[3], grades[4], grades[5], resultText);
             }
             

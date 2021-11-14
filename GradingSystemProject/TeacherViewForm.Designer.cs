@@ -566,7 +566,7 @@ namespace GradingSystemProject
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(707, 474);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 17);
+            this.label2.Size = new System.Drawing.Size(53, 16);
             this.label2.TabIndex = 42;
             this.label2.Text = "Course:";
             // 
@@ -575,7 +575,7 @@ namespace GradingSystemProject
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(707, 536);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(46, 17);
+            this.label10.Size = new System.Drawing.Size(44, 16);
             this.label10.TabIndex = 42;
             this.label10.Text = "Class:";
             // 
@@ -613,6 +613,7 @@ namespace GradingSystemProject
             this.Controls.Add(this.GroupBox1);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.Label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "TeacherViewForm";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

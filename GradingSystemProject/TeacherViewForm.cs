@@ -49,9 +49,8 @@ namespace GradingSystemProject
 			};
 		}
 
-		private void ResetTextBox()
+		private void ResetGradeTextBox()
         {
-			txtName.Text = "";
 			Controls.OfType<GroupBox>().ToList().ForEach(grp => grp.Controls.OfType<TextBox>().ToList().ForEach(tb => tb.Text = ""));
         }
 
@@ -76,7 +75,8 @@ namespace GradingSystemProject
 		private void cboCourse_SelectedIndexChanged(object sender, EventArgs e)
         {
 			selectedStudentID = -1;
-			ResetTextBox();
+			txtName.Text = "";
+			ResetGradeTextBox();
 			LockScoreTextBox();			
 			List <Class> classes = teacherbll.GetClassesByCourse(teacher.TeacherID, (Course)cboCourse.SelectedItem);
 			cboClass.Text = "";
@@ -88,7 +88,8 @@ namespace GradingSystemProject
         private void cboClass_SelectedIndexChanged(object sender, EventArgs e)
 		{
 			selectedStudentID = -1;
-			ResetTextBox();
+			txtName.Text = "";
+			ResetGradeTextBox();
 			LockScoreTextBox();
 			List<Student> students = teacherbll.GetStudentsByClass((Class)cboClass.SelectedItem);
 			lstStudent.Items.Clear();
@@ -124,6 +125,11 @@ namespace GradingSystemProject
 				txtPracticalQuizGrade.Text = courseGrade.PracticalExamGrade.ToString();
 				txtFinalExamGrade.Text = courseGrade.FinalExamGrade.ToString();
 				txtAverageGrade.Text = courseGrade.AvarageGrade.ToString();
+				txtRemarks.Text = courseGrade.ResultText.ToString();
+				txtRemarks.ForeColor = txtRemarks.Text.Equals("Passed") ? Color.Green : Color.Red;
+			} else
+            {
+				ResetGradeTextBox();
 			}
 
 			UnlockScoreTextBox();
@@ -236,9 +242,8 @@ namespace GradingSystemProject
 
 			txtAverageGrade.Text = adal.ToString();
 
-			if (Conversion.Val(txtAverageGrade.Text) <= 74)
+			if (Conversion.Val(txtAverageGrade.Text) < 50 || Conversion.Val(txtFinalExamGrade.Text) < 40)
 			{
-
 				txtRemarks.Text = "Failed";
 				txtRemarks.ForeColor = Color.Red;
 			}
@@ -265,14 +270,14 @@ namespace GradingSystemProject
                 string report = teacherbll.DeleteGrade(studentID, courseID);
 
                 MessageBox.Show(report);
-                ResetTextBox();
+				ResetGradeTextBox();
             }
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
 
-			if (gradeTextBoxes.Any(tb => tb.Text.Trim() == "") || txtRemarks.Text =="")
+			if (Controls.OfType<GroupBox>().Any(grp => grp.Controls.OfType<TextBox>().Any(tb => tb.Text.Trim() == "")))
             {
 				MessageBox.Show("Can not save! Must fill all field or compute first!");
 				return;
@@ -290,7 +295,7 @@ namespace GradingSystemProject
 
         private void btnClearAll_Click(object sender, EventArgs e)
         {
-            ResetTextBox();
+			ResetGradeTextBox();
         }
 
         private void btnLogout_Click(object sender, EventArgs e)

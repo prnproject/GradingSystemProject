@@ -301,6 +301,7 @@ namespace GradingSystemProject
             this.Controls.Add(this.btnExportReport);
             this.Controls.Add(this.txtClass);
             this.Controls.Add(this.txtStudent);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "StudentViewForm";
             this.Text = "<StudentName> | Grading System";
             this.Load += new System.EventHandler(this.Form2_Load);

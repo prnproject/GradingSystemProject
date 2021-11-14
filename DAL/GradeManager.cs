@@ -69,10 +69,15 @@ namespace DAL
                     conn.Open();
                 }
 
-                SqlCommand command = new SqlCommand($"select * from Grade where gradeStudentID ={gradeStudentID} and gradeStudentID={gradeCourseID}", conn);
+                SqlCommand command = new SqlCommand($"select * from Grade where gradeStudentID ={gradeStudentID} and gradeCourseID={gradeCourseID}", conn);
 
-                if (command.ExecuteReader().Read())
+                Console.WriteLine(command.CommandText);
+
+                var r = command.ExecuteReader();
+
+                if (r.Read())
                 {
+                    Console.WriteLine(r.GetInt32(0) + " " + r.GetInt32(2));
                     return true;
                 }                
             }
@@ -92,7 +97,7 @@ namespace DAL
                     conn.Open();
                 }
 
-                SqlCommand command = new SqlCommand($"update Grade set AttendanceGrade='0',ProjectGrade='0',WrittenGrade='0', PracticalExamGrade='0',FinalExamGrade='0',AverageGrade='0' where GradeStudentID='{gradeStudentID} and GradeCourseID='{gradeCourseID}'", conn);
+                SqlCommand command = new SqlCommand($"delete from Grade where GradeStudentID='{gradeStudentID}' and GradeCourseID='{gradeCourseID}'", conn);
 
                 if (command.ExecuteNonQuery() > 0)
                 {
